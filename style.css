@@ -135,3 +135,199 @@ section:hover {
 
     font-size: 22px;
 }
+
+nav {
+    position: sticky;
+
+    top: 0;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    padding: 20px;
+
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    margin: 20px auto;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: #374151;
+
+    font-weight: bold;
+
+    margin: 0 20px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 10px;
+    }
+
+    section {
+        padding: 15px 20px;
+    }
+
+    .skills span {
+        font-size: 14px;
+
+        padding: 10px 15px;
+    }
+}
+
+#darkModeToggle {
+    background-color: white;
+
+    color: #111827;
+
+    border: 1px solid #d1d5db;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+    margin-left: 20px;
+}
+
+#darkModeToggle:hover {
+    background-color: #f3f4f6;
+}
+
+.dark-mode {
+    background-color: #000000;
+
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #111111;
+}
+
+.dark-mode section {
+    background-color: #1a1a1a;
+
+    border: 1px solid #2d2d2d;
+}
+
+.dark-mode .project-card {
+    background-color: #222222;
+
+    border: 1px solid #333333;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li,
+.dark-mode strong,
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: rgba(15, 15, 15, 0.95);
+
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+.dark-mode nav a:hover {
+    color: #60a5fa;
+}
+
+.dark-mode .skills span {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+.dark-mode #darkModeToggle {
+    background-color: #1f1f1f;
+
+    color: white;
+
+    border: 1px solid #3a3a3a;
+}
+
+.dark-mode #darkModeToggle:hover {
+    background-color: #2d2d2d;
+}
+
+nav a.active {
+    color: #2563eb;
+
+    border-bottom: 2px solid #2563eb;
+
+    padding-bottom: 5px;
+}

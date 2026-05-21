@@ -6,12 +6,35 @@
     <title>Eunyu Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
+    <body>
 
-        <div class="hero">
+        <nav>
+
+            <a href="#about">About</a>
+
+            <a href="#education">Education</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#experience">Experience</a>
+
+            <button id="darkModeToggle">
+                🌙
+            </button>
+
+        </nav>
+
+        <div class="container">
+
+            <div class="hero">
 
             <h1>EUNYU KANG</h1>
 
@@ -21,10 +44,14 @@
 
             <div class="hero-contact">
 
-                <p>📧Email : eunyu1877@chosun.ac.kr</p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email : eunyu1877@chosun.ac.kr
+                </p>
 
                 <p>
-                    💻
+                    <i class="fa-brands fa-github"></i>
+
                     <a href="https://github.com/metaphor327" target="_blank">
                         GitHub
                     </a>
@@ -32,9 +59,9 @@
 
             </div>
 
-        </div>
+            </div>
 
-        <section>
+            <section id="about">
             <h2>About Me</h2>
 
             <p>
@@ -46,9 +73,9 @@
                 Currently, I am studying Machine Learning, Git/GitHub, and Web Development.
                 My goal is to become an AI developer who can build practical AI services.
             </p>
-        </section>
+            </section>
 
-        <section>
+            <section id="education">
             <h2>Education</h2>
 
             <ul>
@@ -60,9 +87,9 @@
                     Machine learning, Data Structure, Signals and Systems, Open-Source SW Introduction, Artificial Intelligence Introduction
                 </li>
             </ul>
-        </section>
+            </section>
 
-        <section>
+            <section id="skills">
             <h2>Skills</h2>
 
             <div class="skill-category">
@@ -101,9 +128,9 @@
                     <span>Docker - Basic</span>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section>
+            <section id="projects">
             <h2>Projects</h2>
 
             <div class="project-card">
@@ -150,9 +177,9 @@
 
             </div>
 
-        </section>
+            </section>
 
-        <section>
+            <section id="experience">
             <h2>Experience</h2>
 
             <div class="project-card">
@@ -166,9 +193,9 @@
 
             </div>
 
-        </section>
+            </section>
 
-        <section>
+            <section>
             <h2>CV / Resume</h2>
 
             <p>
@@ -177,9 +204,9 @@
                 </a>
             </p>
 
-        </section>
+            </section>
 
-        <section>
+            <section>
             <h2>Career Goal</h2>
 
             <div class="skills">
@@ -194,8 +221,11 @@
 
             </div>
 
-        </section>
+            </section>
 
-    </div>    
+        </div>    
+
+        <script src="script.js"></script>
+        
 </body>
 </html>
