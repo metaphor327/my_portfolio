@@ -30,9 +30,25 @@ window.addEventListener("scroll", () => {
 
         link.classList.remove("active");
 
-        if (link.getAttribute("href") === `#${current}`) {
+        if (link.dataset.section === current) {
 
             link.classList.add("active");
         }
+    });
+});
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        const targetId = link.dataset.section;
+
+        const targetSection = document.getElementById(targetId);
+
+        targetSection.scrollIntoView({
+            behavior: "smooth"
+        });
     });
 });
